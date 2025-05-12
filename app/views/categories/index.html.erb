@@ -1,0 +1,8 @@
+<div class="container p-4 ">
+<ul class="list-group m">
+  <% @categories.each do |category| %>
+    <li class="list-group-item"><%= link_to category.name, category_path(category), class: "text-decoration-none text-color-black" %></li>
+  <% end %>
+</ul>
+<%=  link_to "Add category",  new_category_path, class: "btn btn-primary mt-3"%>
+</div>

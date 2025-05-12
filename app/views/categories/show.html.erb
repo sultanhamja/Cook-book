@@ -1,0 +1,15 @@
+<div class="container p-4" >
+  <h2><%= @category.name %></h2>
+  <ul class= "list-group mt-3">
+  <%@category.bookmarks.each do |bookmark| %>
+    <li class="list-group-item">
+      <h3><%= bookmark.recipe.name %> </h3>
+      <p><%= bookmark.recipe.description %></p>
+      <p><%=  bookmark.recipe.rating %></p>
+      <p><%= link_to "Delete", bookmark_path(bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure"} %></p>
+    </li>
+  <% end %>
+  </ul>
+  <p> <%= link_to "Add recipe", new_category_bookmark_path(@category), class: "btn btn-primary mt-3" %>  </p>
+  <p> <%= link_to "Back to categories", categories_path, class: "btn btn-secondary" %>  </p>
+</div>
