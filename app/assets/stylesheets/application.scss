@@ -10,3 +10,19 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+a {
+  color: rgb(13, 13, 13);
+  text-decoration: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

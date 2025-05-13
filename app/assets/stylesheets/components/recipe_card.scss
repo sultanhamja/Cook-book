@@ -1,0 +1,32 @@
+.card-recipe {
+  width: 320px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  position:relative ;
+  img {
+    height: 180px;
+    width: 100%;
+  }
+
+  h3 {
+    font-family: monospace ;
+  }
+  .review {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      font-weight: bold;
+      font-size: 10px;
+    }
+  }
+  .delete {
+    position: absolute;
+    top : 20px;
+    right : 20px;
+    color :whitesmoke;
+    &:hover {
+      color:#C06968;
+    }
+
+  }
+}

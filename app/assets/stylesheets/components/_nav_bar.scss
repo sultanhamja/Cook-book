@@ -1,0 +1,34 @@
+nav {
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  ul {
+    margin-top: 16px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu_item {
+    padding: 6px 12px;
+    margin-right: 36px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(50, 50, 50);
+    &:hover {
+    color : #C06968;
+  }
+  }
+  .img {
+    width: 15%;
+  }
+  .btn-warning {
+    color :white;
+  }
+}

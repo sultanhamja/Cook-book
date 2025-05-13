@@ -1,9 +1,9 @@
-<div class=" container p-4" >
+<div class=" container form-new mt-5 p-5  " >
   <h2> Add new Recipe to <%= @category.name %></h2>
   <%= simple_form_for [@category, @bookmark] do |f| %>
-    <%= f.input :comment %>
+    <%= f.input :comment, placeholder: "Type comment here" %>
     <%= f.association :recipe %>
-    <%= f.submit "Add Recipe", class: "btn btn-primary" %>
+    <%= f.submit "Add Recipe", class: "btn btn-info" %>
   <% end %>
   <p class="mt-3 " ><%= link_to "back to #{@category.name} category", category_path(@category), class: "btn btn-secondary" %></p>
 </div>

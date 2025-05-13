@@ -1,8 +1,7 @@
-<div class="container p-5" >
+<div class="container form-new mt-5 p-5" >
   <h2>Add new Category</h2>
-<%= simple_form_for @category do |f| %>
-  <%= f.input :name %>
- <%= f.submit class: "btn btn-primary" %>
- <%= link_to "Back to categories", categories_path, class: "btn btn-secondary" %>
-<% end %>
+  <%= simple_form_for @category do |f| %>
+    <%= f.input :name, placeholder: "Type category name" %>
+    <%= f.submit class: "btn btn-info" %>
+  <% end %>
 </div>
